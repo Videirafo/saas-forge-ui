@@ -1,0 +1,56 @@
+{
+  "$schema": "https://videirafo.github.io/saas-forge-ui/registry/schema.json",
+  "name": "saas-forge-ui",
+  "version": "0.1.0",
+  "distribution": "source-first",
+  "homepage": "https://videirafo.github.io/saas-forge-ui/",
+  "repository": "https://github.com/Videirafo/saas-forge-ui",
+  "items": [
+    {
+      "name": "app-shell",
+      "title": "AppShell",
+      "type": "component",
+      "status": "ready",
+      "category": "navigation",
+      "files": ["src/components/app-shell.tsx", "src/components/command-palette.tsx", "src/components/theme-toggle.tsx", "src/lib/navigation.tsx"],
+      "dependencies": ["@phosphor-icons/react"]
+    },
+    {
+      "name": "command-palette",
+      "title": "Command Palette",
+      "type": "component",
+      "status": "ready",
+      "category": "navigation",
+      "files": ["src/components/command-palette.tsx", "src/lib/navigation.tsx"],
+      "dependencies": ["@phosphor-icons/react"]
+    },
+    {
+      "name": "data-table",
+      "title": "Data Table",
+      "type": "component",
+      "status": "ready",
+      "category": "data",
+      "files": ["src/components/data-table.tsx"],
+      "dependencies": ["@phosphor-icons/react"]
+    },
+    {
+      "name": "theme-toggle",
+      "title": "Theme Toggle",
+      "type": "component",
+      "status": "ready",
+      "category": "system",
+      "files": ["src/components/theme-toggle.tsx"],
+      "dependencies": ["@phosphor-icons/react"]
+    },
+    {
+      "name": "async-states",
+      "title": "Async States",
+      "type": "pattern",
+      "status": "ready",
+      "category": "system",
+      "files": ["src/components/state-showcase.tsx"],
+      "dependencies": ["@phosphor-icons/react"]
+    }
+  ],
+  "planned": ["form-field", "drawer", "filterable-data-grid", "activity-feed", "billing-patterns"]
+}
