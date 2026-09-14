@@ -20,7 +20,7 @@ type CatalogItem = {
   description: string;
   source: string;
   code: string;
-  icon: React.ComponentType<{ size?: number; weight?: "regular" | "bold" }>;
+  icon: typeof Layout;
 };
 
 const items: CatalogItem[] = [
@@ -39,7 +39,7 @@ const items: CatalogItem[] = [
     category: "Navigation",
     description: "Keyboard-first navigation surfaced through Ctrl/Cmd + K with searchable destinations and focus-safe interaction.",
     source: "src/components/command-palette.tsx",
-    code: `import { CommandPalette } from "./components/command-palette";\n\n<CommandPalette\n  open={open}\n  onOpenChange={setOpen}\n/>`,
+    code: `import { CommandPalette } from "./components/command-palette";\n\nexport function ProductHeader() {\n  return <CommandPalette />;\n}`,
     icon: Rows,
   },
   {
@@ -57,7 +57,7 @@ const items: CatalogItem[] = [
     category: "System",
     description: "Light and dark theme preference with system fallback, local persistence and accessible button semantics.",
     source: "src/components/theme-toggle.tsx",
-    code: `import { ThemeToggle } from "./components/theme-toggle";\n\n<header>\n  <ThemeToggle />\n</header>`,
+    code: `import { ThemeToggle } from "./components/theme-toggle";\n\nexport function ProductHeader() {\n  return <ThemeToggle />;\n}`,
     icon: MoonStars,
   },
   {
