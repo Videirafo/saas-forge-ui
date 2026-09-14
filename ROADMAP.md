@@ -7,6 +7,8 @@
 - Data table pattern
 - Loading / empty / error patterns
 - GitHub Pages demo
+- Visual component catalog
+- Machine-readable registry metadata and schema
 
 ## 0.2 — Product surfaces
 - Filterable data grid
@@ -16,8 +18,8 @@
 - Billing and plan-management patterns
 
 ## 0.3 — Distribution
-- Copy-paste component registry
-- Component documentation pages
+- Installable copy-paste component registry and CLI
+- Dedicated component documentation routes
 - Visual regression tests
 - Accessibility checks in CI
 - Release automation and changelog generation
