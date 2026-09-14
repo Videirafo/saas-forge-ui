@@ -1,0 +1,24 @@
+name: Component proposal
+description: Propose a production-minded UI pattern.
+title: "[component]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Product problem
+      description: What real workflow does this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected behavior
+      description: Include mobile, keyboard and state requirements.
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Screenshots, links or prior art. Do not paste proprietary code.
