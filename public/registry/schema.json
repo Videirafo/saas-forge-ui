@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://videirafo.github.io/saas-forge-ui/registry/schema.json",
+  "title": "SaaS Forge UI Registry",
+  "type": "object",
+  "required": ["name", "version", "distribution", "items"],
+  "properties": {
+    "name": { "type": "string" },
+    "version": { "type": "string" },
+    "distribution": { "enum": ["source-first"] },
+    "homepage": { "type": "string", "format": "uri" },
+    "repository": { "type": "string", "format": "uri" },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "title", "type", "status", "category", "files"],
+        "properties": {
+          "name": { "type": "string" },
+          "title": { "type": "string" },
+          "type": { "enum": ["component", "pattern"] },
+          "status": { "enum": ["ready", "planned"] },
+          "category": { "type": "string" },
+          "files": { "type": "array", "items": { "type": "string" } },
+          "dependencies": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "planned": { "type": "array", "items": { "type": "string" } }
+  }
+}

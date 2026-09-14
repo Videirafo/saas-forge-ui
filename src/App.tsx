@@ -1,5 +1,6 @@
 import { ArrowUpRight, Pulse, Sparkle } from "@phosphor-icons/react";
 import { AppShell } from "./components/app-shell";
+import { ComponentCatalog } from "./components/component-catalog";
 import { DataTable } from "./components/data-table";
 import { StateShowcase } from "./components/state-showcase";
 
@@ -15,12 +16,12 @@ function App() {
       <div className="page-shell">
         <section className="hero-section">
           <div className="hero-copy">
-            <span className="release-pill"><Sparkle size={14} weight="fill" /> Open-source preview · v0.1</span>
+            <span className="release-pill"><Sparkle size={14} weight="fill" /> Component catalog · v0.1</span>
             <h1>Interfaces for SaaS products that have to work after the screenshot.</h1>
             <p>SaaS Forge UI is a production-minded React pattern library: responsive navigation, meaningful states, accessible interactions and data-dense surfaces without generic dashboard chrome.</p>
             <div className="hero-actions">
-              <a className="primary-button" href="https://github.com/Videirafo/saas-forge-ui" target="_blank" rel="noreferrer">View repository <ArrowUpRight size={16} /></a>
-              <a className="secondary-button" href="#principles">Design principles</a>
+              <a className="primary-button" href="#components">Explore components <ArrowUpRight size={16} /></a>
+              <a className="secondary-button" href="https://github.com/Videirafo/saas-forge-ui" target="_blank" rel="noreferrer">View repository</a>
             </div>
           </div>
           <div className="hero-signal" aria-label="System health preview">
@@ -42,6 +43,7 @@ function App() {
           ))}
         </section>
 
+        <ComponentCatalog />
         <DataTable />
         <StateShowcase />
 
