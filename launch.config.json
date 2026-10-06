@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "skill": "videira-launch",
+  "project": "SaaS Forge UI",
+  "kind": "design-system-web",
+  "productSurface": [
+    "ui",
+    "components",
+    "design-system",
+    "templates"
+  ],
+  "demo": {
+    "baseUrl": null,
+    "primaryPath": "/",
+    "preferRealUI": true,
+    "videoRecommended": true
+  },
+  "channels": [
+    "instagram-reels",
+    "youtube-shorts",
+    "linkedin",
+    "github-release"
+  ],
+  "privacy": {
+    "useSyntheticData": true,
+    "forbid": [
+      "secrets",
+      "tokens",
+      "credentials",
+      "private-design-assets",
+      "internal-urls"
+    ]
+  },
+  "evidence": {
+    "require": [
+      "repository",
+      "sha",
+      "branch",
+      "feature",
+      "ciState",
+      "deploymentState"
+    ],
+    "includeRecentCommits": 5
+  },
+  "publishing": {
+    "automatic": false,
+    "requiresApproval": true
+  },
+  "outputDirectory": "launch-output-{timestamp}"
+}
